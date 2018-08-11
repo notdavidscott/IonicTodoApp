@@ -1,0 +1,26 @@
+Final Project: Mobile Cordova and Ionic67 points
+Directions
+In this final project, you will build a todo list app using Cordova and Ionic. Follow the directions 
+below and if you have any questions reach out to your instructor/mentor.
+
+Build an Ionic app that uses AngularJS or angular2 to implement a simple todo list app. It should 
+allow you to add todo items and mark item status as pending, complete, or overdue. It should allow 
+you to update and delete todo items. It should allow you to view a list of all existing todo items, 
+as well as just those todo items that are currently pending, as well as just those items that are
+ currently overdue. Each todo item has a unique id field, as well as fields for the todo item named name and status.
+
+The app should remember the todo item state over the ling term. To do that, you can store app state
+ data in an embedded SQLite database, or a custom online web service that you host on a Azure or AWS,
+  or just read and write the data to internal file storage on the local device. For more information 
+  on Android storage options, see: Storage Options.
+
+Of course, you can use google search and stackoverflow.com, as well as the many available tutorials 
+and videos on the web. You can also use any GitHub repos that you can find that might help you develop 
+your own solution. If you find a GitHub project or a tutorial example that is very close to meeting these 
+assignment requirements, do try to customize it in some interesting and significant ways, because you will 
+want a distinctive code example of your own, on your GitHub account, to show potential employers what you
+ can do. However, you are permitted to copy and use any public domain code in your solution that you find 
+ in any coding resources that might be helpful. Just be careful to check any copyright notices that may 
+ exist within existing code to avoid copyrighted infringement.
+
+Provide the link to your project solution, on GitHub, to your instructor for verification.
