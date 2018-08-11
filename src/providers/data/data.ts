@@ -3,7 +3,8 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class Data {
- 
+   
+  private items: { title: string } [] = [];
 
   constructor(public storage: Storage){
  
@@ -18,9 +19,11 @@ export class Data {
     this.storage.set('todos', data);
   }
   
-  deleteItem(){
-
-
+  deleteItem(title: string){
+    this.items = this.items.filter((item) => {
+      return item.title !== title
+    });
+    this.storage.set('items', this.items)
   }
  
 }

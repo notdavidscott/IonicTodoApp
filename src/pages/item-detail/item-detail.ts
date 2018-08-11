@@ -8,11 +8,14 @@ import { Data } from '../../providers/data/data';
 })
 export class ItemDetailPage {
 
+  data: Data;
   title;
   description;
   status;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public view: ViewController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public view: ViewController,) {
+
+    this.data = this.navParams.get('item');
   }
 
   ionViewDidLoad() {
@@ -28,8 +31,9 @@ export class ItemDetailPage {
     this.status = this.status;
     }
 
-    deleteItem(item) {
-
-      this.view.dismiss();
+    deleteItem(title: string) {
+      this.data.deleteItem(title);
+      this.navCtrl.pop();
+     // this.view.dismiss();
     }
 }
