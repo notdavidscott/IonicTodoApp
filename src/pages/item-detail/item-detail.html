@@ -1,15 +1,46 @@
 <ion-header>
-  <ion-navbar color="secondary">
+  <ion-navbar color="primary">
     <ion-title>
       {{title}}
     </ion-title>
   </ion-navbar>
 </ion-header>
  
-<ion-content>
+<ion-content padding>
+
+
   <ion-card>
     <ion-card-content>
       {{description}}
     </ion-card-content>
   </ion-card>
+
+  <ion-list radio-group>
+      <ion-list-header>
+          Task Status
+        </ion-list-header>
+<ion-item class="status-radio">
+  <ion-label>Pending</ion-label>
+  <ion-radio  value="1" (ionSelect)="radioOption(1)"></ion-radio>
+</ion-item>
+  <ion-item class="status-radio">
+    <ion-label>Complete</ion-label>
+    <ion-radio  value="2" (ionSelect)="radioOption(2)"></ion-radio>
+  </ion-item>
+<ion-item class="status-radio">
+<ion-label>Overdue</ion-label>
+  <ion-radio  value="3" (ionSelect)="radioOption(3)"></ion-radio>
+</ion-item>
+</ion-list>
+
+
+
+<ion-footer>
+    <button full ion-button color="danger" (click)="deleteItem()">Delete</button>
+</ion-footer>
+
+
+
 </ion-content>
+
+

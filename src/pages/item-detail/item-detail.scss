@@ -1,3 +1,21 @@
 page-item-detail {
-
+ion-content {
+    background: url(../../assets/imgs/above-art-background-733852.jpg) no-repeat center fixed;
+    background-size: cover;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, #466b96, #8dbad8);
+        opacity: .4;
+    }
+   
+    }
+}
+.status-radio {
+    font-size: 1em;
+    
 }

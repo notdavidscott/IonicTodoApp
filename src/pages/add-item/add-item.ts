@@ -10,6 +10,7 @@ export class AddItemPage {
 
   title: string;
   description: string;
+  status: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public view: ViewController) {
 
@@ -19,19 +20,20 @@ export class AddItemPage {
 
     let newItem = {
       title: this.title,
-      description: this.description
+      description: this.description,
+      status: this.status //need to change this
     };
     this.view.dismiss(newItem);
 
   }
 
-  close(){
 
-    this.view.dismiss;
+  close(){
+    this.view.dismiss();
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AddItemPage');
+    //console.log('ionViewDidLoad AddItemPage');
   }
 
 }

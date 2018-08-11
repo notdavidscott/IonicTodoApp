@@ -1,3 +1,17 @@
 page-add-item {
-
+    ion-content {
+        background: url(../../assets/imgs/black-business-computer-296115.jpg) no-repeat center fixed;
+        background-size: cover;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom left, #598fbb, #dab6b6);
+            opacity: .4;
+        }
+       
+        }
 }
