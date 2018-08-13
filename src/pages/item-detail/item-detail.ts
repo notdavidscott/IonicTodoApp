@@ -32,7 +32,6 @@ export class ItemDetailPage {
     }
 
     deleteItem(title: string) {
-      this.data.deleteItem(title);
       this.navCtrl.pop();
      // this.view.dismiss();
     }
